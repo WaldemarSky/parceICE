@@ -203,7 +203,6 @@ def parse_to_file(instrument, date, recording_mode):
             if write_date_table is not None:
                 good_flag = True
                 break
-            print(f"hui - {write_instrument_date}")
             write_date = write_date - datetime.timedelta(1)
 
         if not good_flag:
